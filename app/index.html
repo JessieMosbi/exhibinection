@@ -138,7 +138,7 @@ current: index
 <!-- https://images.unsplash.com/photo-1545178803-4056771d60a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3150&q=80 -->
 
 
-<div class="live-stream container">
+<div class="live-stream container mb-15">
   <h2 class="h2 mt-15">直播回顧</h2>
   <div class="card mb-3 text-white">
     <div class="row g-0">
@@ -158,3 +158,70 @@ current: index
     </div>
   </div>
 </div>
+
+<div class="container mb-15">
+  <h2 class="h2 mb-6">猜你也喜歡...</h2>
+  <div class="row">
+    <div class="col-12 col-lg-11 offset-lg-1">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504" class="card-img-top mb-1"
+                alt="...">
+              <div class="card-body p-0">
+                <h5 class="card-title mb-1">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810" class="card-img-top mb-1"
+                  alt="...">
+                <div class="card-body p-0">
+                  <h5 class="card-title mb-1">No.22 線上設計展</h5>
+                  <p class="card-text">$350</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3" class="card-img-top mb-1"
+                alt="...">
+              <div class="card-body p-0">
+                <h5 class="card-title mb-1">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+  });
+</script>
