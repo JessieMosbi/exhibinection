@@ -8,7 +8,7 @@
 // scss-docs-start gray-color-variables
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
+$gray-200: #efefef !default; // #e9ecef !default
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
@@ -73,7 +73,7 @@ $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: $gray-100 !default;
+$light: $gray-200 !default; // $gray-100 !default
 $dark: $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -87,7 +87,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "link": #707070 // new,,,,,
+  "link": #707070 // new,,,,,,,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -258,6 +258,8 @@ $spacers: (
   11: $spacer * 11,
   12: $spacer * 12,
   13: $spacer * 13,
+  14: $spacer * 14,
+  15: $spacer * 15,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;

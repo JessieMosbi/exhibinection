@@ -28,6 +28,34 @@
   }
 }
 
+.exhibition-list img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}
+
+.icon-facebook {
+  background: url("../../assets/images/facebook-24px.svg");
+}
+
+.live-stream {
+  .card {
+    background-image: url("https://images.unsplash.com/photo-1501270067467-8298cce1babb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2726&q=80");
+    background-position: center center;
+    background-size: cover;
+  }
+  .card-content {
+    background: #190014cc;
+  }
+}
+
 // .w-auto {
 //   width: auto !important;
 // }
