@@ -4,3 +4,15 @@
   background-size: cover;
   height: 480px;
 }
+
+.top-navbar {
+  height: 52px; /* 隱藏下方捲軸 */
+  overflow-y: hidden;
+}
+
+.nav-scroller {
+  padding-top: 14px;
+  padding-bottom: 30px; /* 隱藏下方捲軸 */ /* FIXME: 這是一直 try 到蓋過去就好嗎？還是有一定的計算方式？ */
+  overflow-x: scroll;
+  background: yellow;
+}
