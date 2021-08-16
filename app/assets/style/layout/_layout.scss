@@ -1,3 +1,16 @@
+.cart-icon::after {
+  content: "3";
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 2px 8px;
+  border-radius: 9px;
+  background-color: #e31277;
+  color: white;
+}
+
 .banner {
   background-image: url("https://images.unsplash.com/photo-1506846540181-347008948fff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2093&q=80");
   background-position: center center;
