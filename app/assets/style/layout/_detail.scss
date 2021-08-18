@@ -1,0 +1,30 @@
+.exhibition-content {
+  margin-top: 44px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 80px;
+  }
+
+  img {
+    height: 256px;
+    object-fit: cover;
+  }
+}
+
+.ticket-box {
+  @include media-breakpoint-up(lg) {
+    height: 256px;
+  }
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.second-image {
+  width: 100%;
+  height: 559px;
+  object-fit: cover;
+}
