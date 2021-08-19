@@ -28,7 +28,7 @@
           <li>
             <a href="#" class="me-8 text-link d-none d-md-block lh-sm">Sign up</a>
           </li>
-          <li>
+          <li data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="cart">
             <a href="#" class="d-block text-black cart-icon">
               <span class="material-icons">
                 confirmation_number
@@ -39,6 +39,115 @@
       </div>
     </div>
   </header>
+
+  <!-- cart canvas -->
+  <section class="offcanvas offcanvas-end | pt-5 pb-6 px-4 pt-lg-8 pb-lg-6 px-lg-8 | bg-black text-white" tabindex="-1"
+    id="cart" aria-labelledby="cartLabel">
+    <div class="offcanvas-header p-0 mb-3">
+      <h3 class="offcanvas-title fs-lg-2" id="cartLabel">Cart List</h3>
+    </div>
+    <ul class="offcanvas-body text-black p-0">
+      <li>
+        <div class="card mb-3">
+          <!-- FIXME: 加上 a, height 就變高了 -->
+          <a href="#">
+            <span class="material-icons">clear</span>
+          </a>
+          <div class="d-flex justify-content-between | px-4 pb-4 px-md-8 pb-md-6">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+                class="img-fluid rounded-start" alt="...">
+              <div class="d-flex flex-column ms-4">
+                <h6 class="card-title mb-1">2020 台味設計展</h6>
+                <span class="mb-1">01 JUN — 31 OCT</span>
+                <span class="mb-3">全票</span>
+                <span class="fs-5">NT$350</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+              <a href="#">
+                <span class="material-icons">remove</span>
+              </a>
+              <span class="fs-5 mx-md-3">01</span>
+              <a href="#">
+                <span class="material-icons">add</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card mb-3">
+          <!-- FIXME: 加上 a, height 就變高了 -->
+          <a href="#">
+            <span class="material-icons">clear</span>
+          </a>
+          <div class="d-flex justify-content-between | px-4 pb-4 px-md-8 pb-md-6">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3153&q=80"
+                class="img-fluid rounded-start" alt="...">
+              <div class="d-flex flex-column ms-4">
+                <h6 class="card-title mb-1">2020 台味設計展</h6>
+                <span class="mb-1">01 JUN — 31 OCT</span>
+                <span class="mb-3">全票</span>
+                <span class="fs-5">NT$350</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+              <a href="#">
+                <span class="material-icons">remove</span>
+              </a>
+              <span class="fs-5 mx-md-3">01</span>
+              <a href="#">
+                <span class="material-icons">add</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card mb-3">
+          <!-- FIXME: 加上 a, height 就變高了 -->
+          <a href="#">
+            <span class="material-icons">clear</span>
+          </a>
+          <div class="d-flex justify-content-between | px-4 pb-4 px-md-8 pb-md-6">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3150&q=80"
+                class="img-fluid rounded-start" alt="...">
+              <div class="d-flex flex-column ms-4">
+                <h6 class="card-title mb-1">2020 台味設計展</h6>
+                <span class="mb-1">01 JUN — 31 OCT</span>
+                <span class="mb-3">全票</span>
+                <span class="fs-5">NT$350</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+              <a href="#">
+                <span class="material-icons">remove</span>
+              </a>
+              <span class="fs-5 mx-md-3">01</span>
+              <a href="#">
+                <span class="material-icons">add</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="offcanvas-footer p-0 d-flex justify-content-between align-items-baseline">
+      <div>
+        <span>小計</span>
+        <span>NT$1050</span>
+      </div>
+      <div>
+        <input type="button" class="btn btn-light btn-sm" value="前往結帳">
+      </div>
+    </div>
+  </section>
 
   <!-- banner -->
   <div class="banner bg-warning text-white">

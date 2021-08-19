@@ -68,3 +68,25 @@
     }
   }
 }
+
+.offcanvas {
+  &-end {
+    width: 540px;
+  }
+
+  &-body {
+    overflow-y: auto; /* depends on 瀏覽器，overflow 發生時會給 scroll-bar */
+
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+  }
+
+  &-footer {
+    .btn {
+      color: #630834;
+    }
+  }
+}
