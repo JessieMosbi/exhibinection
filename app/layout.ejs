@@ -16,7 +16,7 @@
 
 <body>
   <!-- header -->
-  <header class="sticky-top bg-white">
+  <header class="sticky-top bg-white" id="header">
     <div class="container">
       <div class="position-relative text-center">
         <h1 class="d-inline-block text-primary | py-4 py-md-7 | lh-1 fs-4 fs-lg-4">EXHIBINECTION</h1>
@@ -29,7 +29,7 @@
             <a href="#" class="me-8 text-link d-none d-md-block lh-sm">Sign up</a>
           </li>
           <li data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="cart">
-            <a href="#" class="d-block text-black cart-icon">
+            <a href="javascript:;" class="d-block text-black cart-icon">
               <span class="material-icons">
                 confirmation_number
               </span>
@@ -41,8 +41,8 @@
   </header>
 
   <!-- cart canvas -->
-  <section class="offcanvas offcanvas-end | pt-5 pb-6 px-4 pt-lg-8 pb-lg-6 px-lg-8 | bg-black text-white" tabindex="-1"
-    id="cart" aria-labelledby="cartLabel">
+  <section id="cart" class="offcanvas offcanvas-end | pt-5 pb-6 px-4 pt-lg-8 pb-lg-6 px-lg-8 | bg-black text-white"
+    tabindex="-1" id="cart" aria-labelledby="cartLabel">
     <div class="offcanvas-header p-0 mb-3">
       <h3 class="offcanvas-title fs-lg-2" id="cartLabel">Cart List</h3>
     </div>
@@ -237,8 +237,9 @@
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
   <script>
+    $('#cart').css('top', $('#header').height() + 'px')
     // FIXME: 想要用 jQuery 讓他跟 header 距離為 0 時就固定住。但為什麼捲軸往上滑，他的 offset 都不會有變化呢？
-    console.log($('#top-navbar').offset().top)
+    // console.log($('#top-navbar').offset().top)
   </script>
 </body>
 
