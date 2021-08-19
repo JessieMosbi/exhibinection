@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    展覽內容
+  </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="sticky-top bg-white" id="header">
+    <div class="container">
+      <div class="position-relative text-center">
+        <h1 class="d-inline-block text-primary | py-4 py-md-7 | lh-1 fs-4 fs-lg-4">EXHIBINECTION</h1>
+        <!-- FIXME: 這裡加 position-absolute 就高度 0？  -->
+        <ul class="d-flex | position-absolute top-50 end-0 translate-middle-y | list-unstyled">
+          <li>
+            <a href="#" class="me-8 text-link d-none d-md-block lh-sm">Sign in</a>
+          </li>
+          <li>
+            <a href="#" class="me-8 text-link d-none d-md-block lh-sm">Sign up</a>
+          </li>
+          <li data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="cart">
+            <a href="javascript:;" class="d-block text-black cart-icon">
+              <span class="material-icons">
+                confirmation_number
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- cart canvas -->
+  <section id="cart" class="offcanvas offcanvas-end | pt-5 pb-6 px-4 pt-lg-8 pb-lg-6 px-lg-8 | bg-black text-white"
+    tabindex="-1" id="cart" aria-labelledby="cartLabel">
+    <div class="offcanvas-header p-0 mb-3">
+      <h3 class="offcanvas-title fs-lg-2" id="cartLabel">Cart List</h3>
+    </div>
+    <ul class="offcanvas-body text-black p-0">
+      <li>
+        <div class="card mb-3">
+          <!-- FIXME: 加上 a, height 就變高了 -->
+          <a href="#">
+            <span class="material-icons">clear</span>
+          </a>
+          <div class="d-flex justify-content-between | px-4 pb-4 px-md-8 pb-md-6">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+                class="img-fluid rounded-start" alt="...">
+              <div class="d-flex flex-column ms-4">
+                <h6 class="card-title mb-1">2020 台味設計展</h6>
+                <span class="mb-1">01 JUN — 31 OCT</span>
+                <span class="mb-3">全票</span>
+                <span class="fs-5">NT$350</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+              <a href="#">
+                <span class="material-icons">remove</span>
+              </a>
+              <span class="fs-5 mx-md-3">01</span>
+              <a href="#">
+                <span class="material-icons">add</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card mb-3">
+          <!-- FIXME: 加上 a, height 就變高了 -->
+          <a href="#">
+            <span class="material-icons">clear</span>
+          </a>
+          <div class="d-flex justify-content-between | px-4 pb-4 px-md-8 pb-md-6">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3153&q=80"
+                class="img-fluid rounded-start" alt="...">
+              <div class="d-flex flex-column ms-4">
+                <h6 class="card-title mb-1">2020 台味設計展</h6>
+                <span class="mb-1">01 JUN — 31 OCT</span>
+                <span class="mb-3">全票</span>
+                <span class="fs-5">NT$350</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+              <a href="#">
+                <span class="material-icons">remove</span>
+              </a>
+              <span class="fs-5 mx-md-3">01</span>
+              <a href="#">
+                <span class="material-icons">add</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card mb-3">
+          <!-- FIXME: 加上 a, height 就變高了 -->
+          <a href="#">
+            <span class="material-icons">clear</span>
+          </a>
+          <div class="d-flex justify-content-between | px-4 pb-4 px-md-8 pb-md-6">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3150&q=80"
+                class="img-fluid rounded-start" alt="...">
+              <div class="d-flex flex-column ms-4">
+                <h6 class="card-title mb-1">2020 台味設計展</h6>
+                <span class="mb-1">01 JUN — 31 OCT</span>
+                <span class="mb-3">全票</span>
+                <span class="fs-5">NT$350</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+              <a href="#">
+                <span class="material-icons">remove</span>
+              </a>
+              <span class="fs-5 mx-md-3">01</span>
+              <a href="#">
+                <span class="material-icons">add</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="offcanvas-footer p-0 d-flex justify-content-between align-items-baseline">
+      <div>
+        <span>小計</span>
+        <span>NT$1050</span>
+      </div>
+      <div>
+        <input type="button" class="btn btn-light btn-sm" value="前往結帳">
+      </div>
+    </div>
+  </section>
+
+  <!-- banner -->
+  <div class="banner bg-warning text-white d-none">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-12 col-lg-4 offset-lg-1">
+          <h2 class="mb-2 fw-bold fs-1">台北當代藝術展</h2>
+          <span class="d-block mb-4 fs-5 fw-bold">01 JUN - 31 OCT</span>
+          <ul class="d-flex list-unstyled">
+            <li><a href="#" class="btn btn-lg btn-secondary">購買票券</a></li>
+            <li class="ms-2"><a href="#" class="btn btn-lg btn-outline-light">詳細資訊</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- top-navbar -->
+  <div class="top-navbar border-bottom border-dark border-link" id="top-navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <ul class="nav-scroller | d-flex justify-content-between flex-nowrap | list-unstyled text-nowrap">
+            <li><a href="#" class="d-block px-4 text-link">音樂</a></li>
+            <li><a href="#" class="d-block px-4 text-link">戲劇</a></li>
+            <li><a href="#" class="d-block px-4 text-link">設計</a></li>
+            <li><a href="#" class="d-block px-4 text-link">藝術</a></li>
+            <li><a href="#" class="d-block px-4 text-link">美食</a></li>
+            <li><a href="#" class="d-block px-4 text-link">旅遊</a></li>
+            <li><a href="#" class="d-block px-4 text-link">電影</a></li>
+            <li><a href="#" class="d-block px-4 text-link">親子</a></li>
+            <li><a href="#" class="d-block px-4 text-link">期間限定</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main-content -->
+  <main>
+    
+<div class="container">
+  <section class="exhibition-content row align-items-center">
+    <div class="col-lg-6">
+      <div class="card border-0">
+        <div class="card-image position-relative">
+          <img
+            src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+            class="img-fluid w-100" alt="...">
+          <div class="d-none d-md-block d-flex align-items-center position-absolute w-100 | top-50 translate-middle-y">
+            <div class="offset-11 col-1">
+              <span class="fw-bold fs-5 text-white d-block">01 JUN | 31 OCT</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <div class="d-flex align-items-center">
+              <h5 class="card-title fw-bold">2020 台味設計展</h5>
+              <i class="icon icon-facebook ms-2"></i>
+            </div>
+            <span class="d-inline-block d-lg-none fw-medium">01 JUN | 31 OCT(!)</span>
+          </div>
+          <p class="card-text mt-1">
+            一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="ticket-box row align-items-center">
+        <div class="col-lg-6 d-flex flex-column align-items-center | mt-10 mt-lg-0">
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="#">
+              <span class="material-icons">remove</span>
+            </a>
+            <span class="display-6 mx-10">01</span>
+            <a href="#">
+              <span class="material-icons">add</span>
+            </a>
+          </div>
+          <span class="mt-6">張</span>
+        </div>
+        <div class="col-lg-6 d-flex flex-column align-items-center | mt-10 mt-lg-0">
+          <span class="display-6">NT$350</span>
+          <span class="mt-6 mb-2">票種</span>
+          <ul class="list-unstyled d-flex justify-content-center align-items-center">
+            <li>
+              <a href="#" class="d-block px-4">學生</a>
+            </li>
+            <li>
+              <a href="#" class="d-block px-4">全票</a>
+            </li>
+            <li>
+              <a href="#" class="d-block px-4">愛心</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- buttons -->
+      <div class="row align-items-center mt-10 mt-lg-0">
+        <div class="col-6">
+          <input type="button" class="btn btn-outline-secondary w-100" value="收藏展覽"></button>
+        </div>
+        <div class="col-6">
+          <input type="button" class="btn btn-secondary w-100" value="購買票券"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <div class="row">
+      <div class="col-lg-8 order-lg-3">
+        <p class="mb-1 fw-bold fs-5">藝饗宴</p>
+        <p class="mb-3 fs-5">​Celebration of Style and Art</p>
+        <p class="mb-4 text-link">
+          匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。
+        </p>
+        <p class="text-link">從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
+          等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death
+          NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo
+          的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。</p>
+      </div>
+      <div class="col-lg-12 mb-8 order-lg-1">
+        <img
+          src="https://images.unsplash.com/photo-1546013848-afcad42624d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2989&q=80"
+          alt="" class="main-image img-fluid" alt="...">
+      </div>
+      <div class="col-lg-4 order-lg-2">
+        <img
+          src="https://images.unsplash.com/photo-1494660084187-79afc14b7c0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80"
+          alt="" class="second-image img-fluid" alt="...">
+      </div>
+    </div>
+  </section>
+</div>
+
+      <div class="container mt-12 mb-15">
+        <h2 class="smb-6 fw-bold fs-1 mb-6">猜你也喜歡...</h2>
+<div class="row">
+  <div class="col-12 col-lg-11 offset-lg-1 fs-5">
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="https://images.unsplash.com/photo-1492087368735-957f2d176504" class="card-img-top mb-1" alt="...">
+            <div class="card-body p-0">
+              <h5 class="card-title mb-1">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide">
+            <div class="card border-0">
+              <img src="https://images.unsplash.com/photo-1567722681579-c671cabd2810" class="card-img-top mb-1"
+                alt="...">
+              <div class="card-body p-0">
+                <h5 class="card-title mb-1">No.22 線上設計展</h5>
+                <p class="card-text">$350</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <img src="https://images.unsplash.com/photo-1578402025217-920675beb3c3" class="card-img-top mb-1" alt="...">
+            <div class="card-body p-0">
+              <h5 class="card-title mb-1">No.22 線上設計展</h5>
+              <p class="card-text">$350</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+  });
+</script>
+      </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer bg-dark">
+    <div class="container h-100 d-flex flex-column justify-content-end text-white">
+      <h2 class="fs-3 fs-lg-2">
+        <p>
+          想收到最新消息嗎？<br>
+          快訂閱我們！
+        </p>
+      </h2>
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+          <div class="input-group mb-3">
+            <input type="text" class="email-input form-control" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱"
+              aria-describedby="button-subscribe">
+            <a class="bg-secondary text-white rounded" id="button-subscribe">
+              <span class="d-block px-13 py-3">訂閱</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center py-4 py-md-7">
+        <div class="d-flex flex-column flex-md-row">
+          <h4 class="fw-normal lh-1 fs-4 fs-lg-4">EXHIBINECTION</h4>
+          <span class="ms-md-4">© 2020. All Rights Reserved.</span>
+        </div>
+        <ul class="d-flex list-unstyled mb-0">
+          <li>
+            <a href="#" class="me-6 text-link d-none d-md-block">Sign in</a>
+          </li>
+          <li>
+            <a href="#" class="text-link d-none d-md-block">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script>
+    $('#cart').css('top', $('#header').height() + 'px')
+    // FIXME: 想要用 jQuery 讓他跟 header 距離為 0 時就固定住。但為什麼捲軸往上滑，他的 offset 都不會有變化呢？
+    // console.log($('#top-navbar').offset().top)
+  </script>
+</body>
+
+</html>
