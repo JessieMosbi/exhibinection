@@ -15745,6 +15745,10 @@ fieldset:disabled .btn {
   }
 }
 
+h1, .h1 {
+  color: brown;
+}
+
 .cart-icon::after {
   content: "3";
   position: absolute;
@@ -15788,27 +15792,6 @@ fieldset:disabled .btn {
 
 .footer .email-input {
   padding: 12px 74px 12px 12px;
-}
-
-@media (min-width: 992px) {
-  .fs-lg-1 {
-    font-size: 2.5rem !important;
-  }
-  .fs-lg-2 {
-    font-size: 2rem !important;
-  }
-  .fs-lg-3 {
-    font-size: 1.75rem !important;
-  }
-  .fs-lg-4 {
-    font-size: 1.5rem !important;
-  }
-  .fs-lg-5 {
-    font-size: 1.25rem !important;
-  }
-  .fs-lg-6 {
-    font-size: 1rem !important;
-  }
 }
 
 .offcanvas-end {
