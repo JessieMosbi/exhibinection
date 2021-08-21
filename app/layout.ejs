@@ -16,11 +16,10 @@
 
 <body>
   <!-- header -->
-  <header class="sticky-top bg-white" id="header">
+  <header class="sticky-top bg-white border-bottom border-link" id="header">
     <div class="container">
       <div class="position-relative text-center">
         <h1 class="d-inline-block text-primary | py-4 py-md-7 | lh-1 fs-4 fs-lg-4">EXHIBINECTION</h1>
-        <!-- FIXME: 這裡加 position-absolute 就高度 0？  -->
         <ul class="d-flex | position-absolute top-50 end-0 translate-middle-y | list-unstyled">
           <li>
             <a href="#" class="me-8 text-link d-none d-md-block lh-sm">Sign in</a>
@@ -150,7 +149,7 @@
   </section>
 
   <!-- banner -->
-  <div class="banner bg-warning text-white <%if (current!='index') {%>d-none<%}%>">
+  <div class="banner text-white <%if (current!='index') {%>d-none<%}%>">
     <div class="container h-100">
       <div class="row align-items-center h-100">
         <div class="col-12 col-lg-4 offset-lg-1">
@@ -166,7 +165,7 @@
   </div>
 
   <!-- top-navbar -->
-  <div class="top-navbar border-bottom border-dark border-link" id="top-navbar">
+  <div class="top-navbar border-bottom border-link" id="top-navbar">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8 offset-lg-2">
@@ -238,8 +237,11 @@
   <script src="./assets/js/all.js"></script>
   <script>
     $('#cart').css('top', $('#header').height() + 'px')
+
     // FIXME: 想要用 jQuery 讓他跟 header 距離為 0 時就固定住。但為什麼捲軸往上滑，他的 offset 都不會有變化呢？
-    // console.log($('#top-navbar').offset().top)
+    $(window).scroll(function () {
+      console.log($('#top-navbar').offset().top)
+    });
   </script>
 </body>
 
