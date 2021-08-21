@@ -1,7 +1,10 @@
 @import "./helpers/bootstrap.scss";
+
 @import "./layout/layout";
-@import "./layout/index";
-@import "./layout/detail";
+@import "./pages/index";
+@import "./pages/detail";
+
+// @import "./utilities/typography";
 
 h1,
 .h1,

@@ -1,0 +1,34 @@
+.cart-icon::after {
+  content: "3";
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 2px 8px;
+  border-radius: 9px;
+  background-color: #e31277;
+  color: white;
+}
+
+.offcanvas {
+  &-end {
+    width: 540px;
+  }
+
+  &-body {
+    overflow-y: auto; /* depends on 瀏覽器，overflow 發生時會給 scroll-bar */
+
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+  }
+
+  &-footer {
+    .btn {
+      color: #630834;
+    }
+  }
+}
