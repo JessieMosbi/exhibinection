@@ -1,27 +1,6 @@
 @import "./helpers/bootstrap.scss";
+@import "./utilities/typography";
 
 @import "./layout/layout";
 @import "./pages/index";
 @import "./pages/detail";
-
-// @import "./utilities/typography";
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-
-.fw-medium {
-  font-weight: $font-weight-medium;
-}
