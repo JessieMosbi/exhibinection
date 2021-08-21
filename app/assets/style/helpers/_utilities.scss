@@ -1,0 +1,19 @@
+// 將原本的 utilities map 加上新的 map 後，再重新賦予到 utilities map
+$utilities: map-merge(
+  $utilities,
+  (
+    // get 原本 utilities map 中的 font-size map，跟我新的 map merge
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          rfs: false,
+          responsive: true,
+        )
+      )
+  )
+);
+
+h1 {
+  color: brown;
+}
